@@ -1,0 +1,89 @@
+/* clock */
+.clock {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: blanchedalmond;
+  margin: 10rem;
+  overflow: hidden;
+}
+
+.clock::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 100;
+}
+
+.hour-arrow {
+  position: absolute;
+  width: 10px;
+  height: 50%;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(30deg);
+  transform-origin: bottom;
+}
+
+.minute-arrow {
+  position: absolute;
+  width: 7px;
+  height: 40%;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(10deg);
+  transform-origin: bottom;
+}
+
+.second-arrow {
+  position: absolute;
+  width: 3px;
+  height: 50%;
+  background-color: red;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(90deg);
+  transform-origin: bottom;
+}
+
+.number {
+  color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 100;
+  font-size: 1.5rem;
+}
+
+/* STOPWATCH */
+.watch_container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: orange;
+  padding: 5rem;
+}
+
+.watch_text {
+  font-size: 5rem;
+}
+
+.watch_button {
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
