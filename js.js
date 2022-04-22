@@ -1,3 +1,5 @@
+// STOPWATCH
+
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
 let reset = document.getElementById("reset");
@@ -62,6 +64,7 @@ start.addEventListener("click", startWatch);
 stop.addEventListener("click", stopWatch);
 reset.addEventListener("click", resetWatch);
 
+// CLOCK
 let secondHand = document.querySelector(".second-arrow");
 let minuteHand = document.querySelector(".minute-arrow");
 let hourHand = document.querySelector(".hour-arrow");
