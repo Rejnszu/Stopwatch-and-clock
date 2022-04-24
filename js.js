@@ -11,9 +11,7 @@ let min = document.getElementById("min");
 let sec = document.getElementById("sec");
 let mili = document.getElementById("mili");
 let intervalWatch;
-function stopWatch() {
-  timer();
-}
+
 
 function timer() {
   milis++;
